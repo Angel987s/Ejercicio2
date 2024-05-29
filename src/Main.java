@@ -35,10 +35,10 @@ public class Main {
             continuar = respuesta.equalsIgnoreCase("s");
         }
 
-        // Ordenar empleados por ID de mayor a menor
+        
         Collections.sort(empleados, (e1, e2) -> Integer.compare(e2.getId(), e1.getId()));
 
-        // Mostrar empleados registrados
+        
         Iterator<Empleado> iterator = empleados.iterator();
         while (iterator.hasNext()) {
             Empleado empleado = iterator.next();
